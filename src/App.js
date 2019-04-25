@@ -100,6 +100,7 @@ class App extends Component {
         <Tabs defaultActiveKey="1">
           <Tabs.TabPane tab="Tab 1" key="1">
             <Card style={style} actions={[<a>操作一</a>, <a>操作二</a>]}>
+            温聪
             </Card>
           </Tabs.TabPane>
           <Tabs.TabPane tab="Tab 2" key="2">
