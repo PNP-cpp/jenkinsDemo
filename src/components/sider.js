@@ -26,7 +26,7 @@ export class SiderIOT extends Component {
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                         <Menu.Item key="1">
                             <Icon type="user" />
-                            <span>nav 1</span>
+                            <span>Web前端</span>
                         </Menu.Item>
                         <Menu.Item key="2">
                             <Icon type="video-camera" />
