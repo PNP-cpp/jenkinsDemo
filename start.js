@@ -24,6 +24,7 @@ http.createServer( function (request, response) {
          let fileName = pathname.lastIndexOf(".");//取到文件名开始到最后一个点的长度
          let fileNameLength = pathname.length;//取到文件名长度
          let type = pathname.substring(fileName + 1, fileNameLength);//
+         console.log("'Content-Type': 'text/'+",type);
          response.writeHead(200, {'Content-Type': 'text/'+type});    
          
          // 响应文件内容
