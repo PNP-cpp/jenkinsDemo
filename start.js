@@ -21,7 +21,10 @@ http.createServer( function (request, response) {
       }else{             
          // HTTP 状态码: 200 : OK
          // Content Type: text/html
-         response.writeHead(200, {'Content-Type': 'text/html'});    
+         let fileName = pathname.lastIndexOf(".");//取到文件名开始到最后一个点的长度
+         let fileNameLength = pathname.length;//取到文件名长度
+         let type = pathname.substring(fileName + 1, fileNameLength);//
+         response.writeHead(200, {'Content-Type': 'text/'+type});    
          
          // 响应文件内容
          response.write(data.toString());        
